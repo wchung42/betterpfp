@@ -109,7 +109,7 @@ class PFP(commands.Cog):
     # ---------------------------
     @app_commands.command(name='pride', description='Adds pride decoration to your profile picture.')
     @app_commands.checks.cooldown(1, 60, key=lambda i: (i.guild.id, i.user.id))
-    @app_commands.checks.bot_has_permissions(send_messages=True, read_message_history=True)
+    #@app_commands.checks.bot_has_permissions(send_messages=True, read_message_history=True)
     async def get_tldr(self, interaction: discord.Interaction) -> None:
         # Get user profile picture
         user_asset: discord.Asset = interaction.user.display_avatar.with_size(256)
