@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DEFAULT_PREFIX = 'p!'
+DEFAULT_PREFIX = 'bp!'
 
 # Enable Discord Intents
 intents = discord.Intents.default()

@@ -132,7 +132,8 @@ class PFP(commands.Cog):
 
         # Create embed
         embed: discord.Embed = discord.Embed(
-            description=f'{interaction.user.mention}',
+            title='Pride',
+            description=f'{interaction.user.mention}\n*Click on image to save.*',
             color=discord.Color(0xFFD895),
         )
         embed.set_image(url='attachment://pfp.png')
