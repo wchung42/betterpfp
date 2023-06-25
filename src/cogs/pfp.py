@@ -131,7 +131,7 @@ class PFP(commands.Cog):
         # Get backgrounds
         options: list = []
         path: str = './src/resources/pride'
-        for file in os.listdir(path):
+        for file in sorted(os.listdir(path)):
             if file.endswith('.png'):
                 info: list = file[:-4].split('_')
                 options.append({
