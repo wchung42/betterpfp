@@ -155,7 +155,7 @@ class PFP(commands.Cog):
         extension: str = 'gif' if is_gif else 'png'
         embed: discord.Embed = discord.Embed(
             title='Pride',
-            description=f'{interaction.user.mention}\n*1. Click on image to save.\n2. Right click and save.\3. Change your profile picture in Discord settings.*',
+            description=f'{interaction.user.mention}\n*1. Click on image to save.\n2. Right click and save.\n3. Change your profile picture in Discord settings.*',
             color=discord.Color(0xa7c7e7),
         )
         embed.set_image(url=f'attachment://pfp.{extension}')
